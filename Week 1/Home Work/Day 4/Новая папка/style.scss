@@ -1,0 +1,26 @@
+
+@mixin button($c,$b,$w,$h){
+    color: $c;
+    background-color: $b;
+    width: $w;
+    height: $h;
+
+}
+
+h1{
+   @include button(gold,grey,100px,500px)
+}
+h2{
+    @extend h1;
+}
+
+
+// h1{
+//     width: 200px;
+//     height: 300px;
+//     color: red;
+//     border: 1px solid black;
+// }
+// h1{
+//     width: 100px;
+// }
